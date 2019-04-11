@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         FrameLayout gu = findViewById(R.id.tucan);
 
+
         String getpath ="android.resource://"+ getPackageName()+"/"+R.raw.avengers;
         Uri uri =Uri.parse(getpath);
         video.setVideoURI(uri);
