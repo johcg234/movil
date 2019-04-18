@@ -6,4 +6,11 @@
     <string name="_2_080_789_views">2.080.789 Views</string>
     <string name="califica_el_video">Califica El Video</string>
     <string name="videotrailers">VideoTrailers</string>
+    <string name="title_activity_drawer">ella_no_te_ama</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 </resources>

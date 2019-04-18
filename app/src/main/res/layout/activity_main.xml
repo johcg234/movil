@@ -93,7 +93,7 @@
             app:srcCompat="@drawable/comp" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/Drawer"
             android:layout_width="20dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -171,5 +171,11 @@
             android:textColor="#F00"
             android:textSize="19sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawer" />
 
 </LinearLayout>

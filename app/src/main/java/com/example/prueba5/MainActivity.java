@@ -1,6 +1,7 @@
 package com.example.prueba5;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
@@ -20,6 +21,8 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
+    Intent intent;
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -58,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+                //
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final VideoView video= findViewById(R.id.avengers);
@@ -88,5 +93,24 @@ public class MainActivity extends AppCompatActivity {
         MediaController media = new MediaController(this);
         video.setMediaController(media);
         media.setAnchorView(gu);
+
+        intent = new Intent(this,Drawer.class);
+        ImageView Drawer = findViewById(R.id.Drawer);
+        Drawer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        });
+
+        intent = new Intent(this,Drawer.class);
+        intent.putExtra("VIDEO_ID","123abc");
+        Button drawer = findViewById(R.id.drawer);
+        drawer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        });
     }
 }
